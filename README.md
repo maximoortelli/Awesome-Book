@@ -125,6 +125,11 @@ The project can be deployed to a hosting service.
 - GitHub: [@maximoortelli](https://github.com/maximoortelli)
 - Linkedin: [@maximoortelli](https://www.linkedin.com/in/maximo-ortelli-rueda-265228203/)
 
+👤 **Daniel Felipe Cañón Sánchez.**
+
+- GitHub: [@Daniel Felipe Cañón Sánchez](https://github.com/danielf-canon)
+- Linkedin: [@DanielCañón] (https://www.linkedin.com/in/daniel-felipe-canon-sanchez/)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
