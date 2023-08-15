@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   let allBooks = [
-    { title: '', author: '',},
-    { title: '', author: '',},];
+    { title: '', author: '' },
+    { title: '', author: '' }];
 
   allBooks = JSON.parse(localStorage.getItem('allBooks')) || [];
 
@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
   $books.addEventListener('click', (event) => {
     if (event.target.classList.contains('delete')) {
       const myInd = Array
-      .from(event.target.parentNode.parentNode.children).indexOf(event.target.parentNode);
+        .from(event.target.parentNode.parentNode.children).indexOf(event.target.parentNode);
       delMyBook(myInd);
     }
   });
