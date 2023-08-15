@@ -70,7 +70,7 @@ Awesome Books is an exercise in which I will build a basic website that allows u
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-### URL: https://maximoortelli.github.io/Portfolio-setup-and-mobile--first/ 
+### URL: https://maximoortelli.github.io/Awesome-Book/ 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
