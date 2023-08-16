@@ -1,7 +1,193 @@
-*,
-body {
+* {
   padding: 0;
   margin: 0;
   color: black;
-  background-color: rgb(173, 171, 171);
+}
+
+.btn {
+  width: 20%;
+  margin-right: 20%;
+  align-self: flex-end;
+}
+
+.x {
+  padding: 1%;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.myTitle {
+  padding: 1%;
+  width: 40vw;
+}
+
+.myAut {
+  width: 32vw;
+  padding: 1%;
+}
+
+.erase {
+  padding: 1%;
+  width: 18%;
+}
+
+.cont-division {
+  display: flex;
+  margin-top: 3vh;
+}
+
+div {
+  display: flex;
+  justify-content: center;
+}
+
+.showLib {
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.add {
+  align-items: center;
+  padding: 1vh;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+
+.add div h3 {
+  width: 100%;
+}
+
+.Formulary {
+  width: 100%;
+  gap: 0.5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.multiplybooks {
+  display: flex;
+  width: 100%;
+}
+
+.multiplybooks:nth-child(even) {
+  background-color: rgb(157, 221, 205);
+}
+
+.multiplybooks:nth-child(odd) {
+  background-color: rgb(239, 243, 247);
+}
+
+div hr {
+  border-color: black;
+  margin-top: 1rem;
+  width: 40%;
+  color: black;
+}
+
+.Formulary .title {
+  width: 60%;
+}
+
+.Formulary .autor {
+  width: 60%;
+}
+
+@media screen and (min-width: 768px) {
+  .btn {
+    width: 3rem;
+    background-color: white;
+    border: 2px solid black;
+    height: 1.3rem;
+  }
+
+  .myAut {
+    font-size: 1.4rem;
+  }
+
+  .Formulary {
+    max-width: 50vw;
+  }
+
+  #addButton {
+    cursor: pointer;
+  }
+
+  .x {
+    font-size: 1.3rem;
+  }
+
+  .showLib {
+    margin: auto;
+    max-width: 65vw;
+    outline: 2px solid black;
+  }
+
+  h2 {
+    margin-top: 2rem;
+  }
+
+  .add div h3 {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+  }
+
+  .title {
+    border: 2px solid black;
+    height: 1.3rem;
+    padding-left: 0.3rem;
+    font-size: 1rem;
+  }
+
+  .erase {
+    cursor: pointer;
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 0.4rem;
+    margin-bottom: 0.2rem;
+    margin-right: 0.7rem;
+    background-color: white;
+    font-weight: 600;
+    height: 2.5rem;
+  }
+
+  .multiplybooks {
+    /*   display: flex; */
+    width: 100%;
+  }
+
+  .multiplybooks:nth-child(even) {
+    background-color: rgb(157, 221, 205);
+  }
+
+  .multiplybooks:nth-child(odd) {
+    background-color: rgb(239, 245, 250);
+  }
+
+  .autor {
+    padding-left: 0.3rem;
+    border: 2px solid black;
+    height: 1.3rem;
+  }
+
+  .myTitle {
+    width: 40vw;
+    padding: 1%;
+    font-size: 1.5rem;
+  }
+
+  hr {
+    border-color: black;
+    margin-top: 1rem;
+    width: 40%;
+    color: black;
+  }
 }
