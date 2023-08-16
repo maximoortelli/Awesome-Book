@@ -64,6 +64,14 @@ div {
   width: 100%;
 }
 
+.Formulary {
+  width: 100%;
+  gap: 0.5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .multiplybooks {
   display: flex;
   width: 100%;
@@ -100,6 +108,10 @@ div hr {
     height: 1.3rem;
   }
 
+  .Formulary {
+    max-width: 50vw;
+  }
+  
   .myAut {
     font-size: 1.4rem;
   }
