@@ -64,14 +64,6 @@ div {
   width: 100%;
 }
 
-.Formulary {
-  width: 100%;
-  gap: 0.5vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .multiplybooks {
   display: flex;
   width: 100%;
@@ -110,10 +102,6 @@ div hr {
 
   .myAut {
     font-size: 1.4rem;
-  }
-
-  .Formulary {
-    max-width: 50vw;
   }
 
   #addButton {
@@ -188,6 +176,6 @@ div hr {
     border-color: black;
     margin-top: 1rem;
     width: 40%;
-    color: black;
+  color: black;
   }
 }
