@@ -1,84 +1,84 @@
-document.addEventListener('DOMContentLoaded', () => {
-  let allBooks = [
-    { title: '', author: '' },
-    { title: '', author: '' }];
+class TheLib {
+  constructor() {
+    this.manybooks = JSON.parse(localStorage.getItem('TheLib')) || [];
+  }
 
-  allBooks = JSON.parse(localStorage.getItem('allBooks')) || [];
+  plus(title, author) {
+    const thenewBook = { title, author };
+    this.manybooks.push(thenewBook);
+    this.myupdate();
+    this.showMyBooks();
+  }
 
-  const $books = document.querySelector('.showLib');
+  erase(i) {
+    this.manybooks.splice(i, 1);
+    this.myupdate();
+    this.showMyBooks();
+  }
 
-  function showBooks() {
-    $books.innerHTML = '';
-    allBooks.forEach((book) => {
-      const $numofBook = document.createElement('div');
-      const $title = document.createElement('h5');
-      const $author = document.createElement('h5');
-      const $delete = document.createElement('button');
-      const $division = document.createElement('hr');
+  myupdate() {
+    localStorage.setItem('TheLib', JSON.stringify(this.manybooks));
+  }
 
-      $numofBook.classList.add('cont-book');
-      $title.classList.add('title');
-      $author.classList.add('author');
-      $delete.classList.add('delete');
+  showMyBooks() {
+    const $differentbooks = document.querySelector('.showLib');
+    $differentbooks.innerHTML = '';
 
-      $title.innerText = book.title;
-      $author.textContent = book.author;
-      $delete.innerHTML = 'Delete';
-      $delete.setAttribute('id', 'delete');
+    this.manybooks.forEach((thebook, i) => {
+      const $multipleBooks = document.createElement('div');
+      const $title = document.createElement('h6');
+      const $X = document.createElement('h6');
+      const $author = document.createElement('h6');
+      const $erase = document.createElement('button');
+      $multipleBooks.classList.add('multiplybooks');
+      $title.classList.add('myTitle');
+      $X.classList.add('x');
+      $author.classList.add('myAut');
+      $erase.classList.add('erase');
+      $title.innerText = `"${thebook.title}"`;
+      $author.textContent = thebook.author;
+      $X.textContent = 'by';
+      $erase.innerHTML = 'Remove';
+      $multipleBooks.appendChild($title);
+      $multipleBooks.appendChild($X);
+      $multipleBooks.appendChild($author);
+      $multipleBooks.appendChild($erase);
+      $erase.addEventListener('click', () => this.erase(i));
 
-      $numofBook.appendChild($title);
-      $numofBook.appendChild($author);
-      $numofBook.appendChild($delete);
-      $numofBook.appendChild($division);
-      $books.appendChild($numofBook);
+      $differentbooks.appendChild($multipleBooks);
     });
   }
+}
 
-  function update() {
-    localStorage.setItem('allBooks', JSON.stringify(allBooks));
+document.addEventListener('DOMContentLoaded', () => {
+  const myLibrary = new TheLib();
+
+  function totalEmpty() {
+    const $myform = document.querySelector('.Formulary');
+    $myform.reset();
   }
 
-  class MyBook {
-    constructor(title, author) {
-      this.title = title;
-      this.author = author;
-    }
+  function plusTheLib() {
+    const $recTitle = document.querySelector('#title');
+    const $recAuthor = document.querySelector('#autor');
+    myLibrary.plus($recTitle.value, $recAuthor.value);
+    totalEmpty();
   }
 
-  function ToallBooks() {
-    const $recTitulo = document.querySelector('#title');
-    const $recAutor = document.querySelector('#author');
-
-    const myBook = new MyBook($recTitulo.value, $recAutor.value);
-    allBooks.push(myBook);
-    update();
-    showBooks();
-  }
-
-  function myEmptyForm() {
-    const $form = document.querySelector('.Form');
-    $form.reset();
-  }
-
-  const $form = document.querySelector('.Form');
-  $form.addEventListener('submit', (e) => {
+  const $myform = document.querySelector('.Formulary');
+  $myform.addEventListener('submit', (e) => {
     e.preventDefault();
-    ToallBooks();
-    myEmptyForm();
+    plusTheLib();
   });
 
-  function delMyBook(index) {
-    allBooks.splice(index, 1);
-    update();
-    showBooks();
-  }
-
-  $books.addEventListener('click', (event) => {
-    if (event.target.classList.contains('delete')) {
-      const myInd = Array
-        .from(event.target.parentNode.parentNode.children).indexOf(event.target.parentNode);
-      delMyBook(myInd);
+  const $differentbooks = document.querySelector('.showLib');
+  $differentbooks.addEventListener('click', (event) => {
+    if (event.target.classList.contains('erase')) {
+      const mybookU = Array
+        .from(event.target.parentNode.parentNode.children).iOf(event.target.parentNode);
+      myLibrary.erase(mybookU);
     }
   });
-  showBooks();
+
+  myLibrary.showMyBooks();
 });

@@ -5,18 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Awesome Books</title>
+    <link rel="stylesheet" href="style.css">
   </head>
 <body>
-  <section>
+  <header>
       <h2>Awesome Books</h2>
-  </section>
+  </header>
+
   <section class="showLib">  
   </section>
-  <form class="Form">
-    <input type="text" class="title" id="title" placeholder="Title" required>
-    <input type="text" class="author" id="author" placeholder="Author" required>
-    <input type="Submit" value="Add">
-  </form>
+
+  <section class="add">
+    <hr></hr>
+    <div>
+       <h3>Add a new book</h3>
+    </div>
+
+     <form class="Formulary">
+       <input placeholder="Title" class="title" type="text" id="title" required>
+       <input placeholder="Author" class="autor" id="autor"  type="text" required>
+       <input value="Add" id="addButton" type="Submit">
+     </form>
+  </section>
+
 <script src="Myscript.js"></script> 
 </body>
 </html>
