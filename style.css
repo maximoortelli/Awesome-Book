@@ -39,18 +39,6 @@ header {
   width: 40vw;
 }
 
-.myAut {
-  width: 32vw;
-  padding: 1%;
-}
-
-#paragraph {
-  font-size: 1.4rem;
-  font-weight: 600;
-  max-width: 60vw;
-  margin-bottom: 2rem;
-}
-
 #myInfoList {
   margin-bottom: 2rem;
 }
