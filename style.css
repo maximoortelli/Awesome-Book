@@ -34,6 +34,18 @@ header {
   margin-bottom: 2rem;
 }
 
+.myAut {
+  width: 32vw;
+  padding: 1%;
+}
+
+#paragraph {
+  font-size: 1.4rem;
+  font-weight: 600;
+  max-width: 60vw;
+  margin-bottom: 2rem;
+}
+
 .myTitle {
   padding: 1%;
   width: 40vw;
