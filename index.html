@@ -4,30 +4,70 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Awesome Books</title>
+    <title>My news Awesome Books</title>
     <link rel="stylesheet" href="style.css">
   </head>
 <body>
+
+  <nav id="thenav">
+    <p id="awesomeBooksTitle">Awesome Books</p>
+    <ul id="myLinks">
+       <li class="myLinks first">
+           <a>List</a>
+       </li>
+       <li class="myLinks">|</li>
+       <li class="myLinks addnew">
+           <a>Add new</a>
+       </li>
+       <li class="myLinks">|</li>
+       <li id="Button" class="myLinks">
+           <a>Contact</a>
+       </li>
+    </ul>
+  </nav>
+
   <header>
-      <h2>Awesome Books</h2>
+      <h1 class="titleawe">Awesome Books</h1>
   </header>
 
   <section class="showLib">  
   </section>
 
-  <section class="add">
-    <hr></hr>
-    <div>
-       <h3>Add a new book</h3>
-    </div>
+  <section class="plus">
+       
+       <div>
+          <h3>Add a new book</h3>
+       </div>
+      
+       <form class="Formulary">
+           <input placeholder="Title" class="title" type="text" id="title" required>
+           <input placeholder="Author" class="autor" id="autor"  type="text" required>
+           <input value="Add" id="addButton" type="Submit">
+       </form>
 
-     <form class="Formulary">
-       <input placeholder="Title" class="title" type="text" id="title" required>
-       <input placeholder="Author" class="autor" id="autor"  type="text" required>
-       <input value="Add" id="addButton" type="Submit">
-     </form>
   </section>
 
+  <section class="Inf">
+
+    <h2 id="theTitleInfo">Contact Information</h2>
+
+    <p id="paragraph">Do you have any questions or you just want to say "Hello"?
+      <br>You can reach out to us!
+    </p>
+
+    <ul id="myInfoList">
+      <li class="myInfoList">Our e-mail: Mail@mail.com</li>
+      <li class="myInfoList">Our phone number: 0043586534422</li>
+      <li class="myInfoList">Our adress: Streetname 22, 84503 City, Country</li>
+    </ul>
+
+  </section>
+
+    <footer class="myfoot">
+      <p id="footer">Copyright</p>
+    </footer>
+
+<script src="sections.js"></script> 
 <script src="Myscript.js"></script> 
 </body>
 </html>
