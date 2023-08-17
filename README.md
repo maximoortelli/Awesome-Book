@@ -4,7 +4,7 @@
   <img src="cat-black-face.png" alt="logo" width="140"  height="auto" />
   <br/>
 
-  <h3><b>Awesome Books: Refactor to use JavaScript classes</b></h3>
+  <h3><b>Awesome Books: A complete website with navigation</b></h3>
 
 </div>
 
@@ -33,9 +33,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Awesome Books: Refactor to use JavaScript classes <a name="about-project"></a>
+# 📖 Awesome Books: A complete website with navigation <a name="about-project"></a>
 
-Awesome Books: Refactor to use JavaScript classes is an exercise in which I will build a basic website that allows users to add/remove books from a list. In this project, I will refactor the Awesome books application to use JavaScript classes. The goal here is to master all of the tools and best practices learned about in previous steps to use them in all Microverse projects and most likely in my future job as well.
+Awesome Books: A complete website with navigation is an exercise in which I will take the Awesome books application and convert it into a fully functional website. I will refactor the project to add three new sections on top of the two sections, i have already completed: Books list (done), Add book form (done), a new Contact info section, a Navigation bar, and a Footer. The goal here is to master all of the tools and best practices learned about in previous steps to use them in all Microverse projects and most likely in my future job as well.
 
 ## 🛠 Built With <a name="built-with"></a>
 
